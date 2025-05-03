@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Akash Meesarapu</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --primary-color: #4e89ff;
+      --secondary-color: #ffffff;
+      --accent-color: #1f2937;
+      --bg-color: #f3f4f6;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--accent-color);
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: var(--primary-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      color: var(--secondary-color);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #cbd5e0;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .section-container h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .section-container p, .section-container ul, .section-container li {
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    #hero {
+      background: linear-gradient(135deg, #4e89ff, #67c6ff);
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    .highlight {
+      color: #fff100;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      background-color: #fff;
+      color: #4e89ff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .social-links i {
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      color: var(--primary-color);
+      transition: transform 0.3s;
+    }
+
+    .social-links i:hover {
+      transform: scale(1.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Akash Meesarapu</div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">Profile</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm<br><span class="highlight" id="typed-name"></span></h1>
+      <p>A 19 year old, passionate and self-driven engineering student with strong interests in application development, problem-solving, and emerging technologies like Machine Learning, and Generative AI.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <section id="about" class="section-container">
+    <h2>About Me</h2>
+    <p>I'm a passionate web developer with a knack for creating stunning, user-friendly websites. With expertise in HTML, CSS, JavaScript, and modern frameworks, I bring ideas to life with clean code and beautiful designs.</p>
+    <h3>Objective</h3>
+    <p>A highly motivated Computer Science Engineering student with a strong foundation in software development, algorithms, and data structures. Seeking an entry-level position to leverage my skills in coding, problem-solving, and teamwork.</p>
+    <h3>Technical Skills</h3>
+    <ul>
+      <li>Programming Languages: C, C++, Python</li>
+      <li>Web Development: HTML, CSS, JavaScript, ReactJS, ExpressJS, NodeJS</li>
+      <li>Databases: SQL, MongoDB</li>
+      <li>Data Structures and Algorithms</li>
+    </ul>
+  </section>
+
+  <section id="education" class="section-container">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>10th Standard:</strong> Sree Bharathi  Residential School, Bhimavaram (2020) - 96%</li>
+      <li><strong>12th Standard:</strong> Tirumala Junior Kalasala, Bhimavaram (2022) - 97.3%</li>
+      <li><strong>B.Tech:</strong> Gayatri Vidya Parishad College of Engineering, Madhurawada (present-2025) - CGPA: 8.5</li>
+    </ul>
+  </section>
+
+  <section id="certifications" class="section-container">
+    <h2>Certifications</h2>
+    <ul>
+      <li>AWS Data Engineering Virtual Internship</li>
+      <li>Infosys Springboard HTML5, CSS3, and JavaScript Certification</li>
+      <li>Front End Web Developer Certification - Infosys</li>
+      <li>Introduction to Internet of Things - NPTEL</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section-container">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Apache Spark Processing with AWS EMR</strong> End-to-end AWS pipeline using S3, Glue, Athena, and QuickSight.</li>
+      <li><strong>Portfolio Website:</strong> A fully responsive personal portfolio built using HTML, CSS, and JavaScript.</li>
+      <li><strong>vehicle detection using IOT sensors:</strong> A smart traffic solution using IoT sensors to detect and track vehicle movement in real time.</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section-container">
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, feel free to reach out through any of the platforms below. I'm always open to discussing new projects, opportunities, or just having a chat!</p>
+    <div class="social-links">
+      <a href="mailto:akashmeesarapuaaa@gmail.com" target="_blank" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/akash-meesarapu-a65569254/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/AkashM12-hash" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <p style="margin-top: 1rem;">Akash Meesarapu<br>Email: akashmeesarapuaaa@gmail.com</p>
+  </section>
+  
+
+  <script>
+    const typedName = document.getElementById("typed-name");
+    const nameText = "Akash Meesarapu";
+    let index = 0;
+    function typeWriter() {
+      if (index < nameText.length) {
+        typedName.innerHTML += nameText.charAt(index);
+        index++;
+        setTimeout(typeWriter, 100);
+      }
+    }
+    window.addEventListener("load", typeWriter);
+  </script>
+</body>
+</html>
